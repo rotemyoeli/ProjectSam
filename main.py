@@ -1,16 +1,6 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-# New
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+import GetSentiment
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+text = "I absolutely loved the movie! The acting was superb and the plot kept me engaged throughout."
+score, sentiment = GetSentiment.analyze_sentiment(text)
+print(f"Sentiment score: {score}\nSentiment: {sentiment}")
