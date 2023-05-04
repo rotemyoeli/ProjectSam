@@ -7,6 +7,8 @@ from tkinter import scrolledtext
 from functools import partial
 import clipboard
 
+#new
+
 def add_url(urls, url_entry):
     # Get the text from the clipboard
     clipboard_text = clipboard.paste()
